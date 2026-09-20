@@ -43,6 +43,15 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+
+## Trained checkpoints
+
+The trained checkpoint files used to generate prediction probabilities for the calibration analyses are hosted on Hugging Face:
+
+<https://huggingface.co/daemon1st/chexpert-calibration-checkpoints>
+
+The Hugging Face repository contains four PyTorch checkpoints and a SHA256 manifest. Raw CheXpert or NIH ChestXray14/CXR8 images are not redistributed. Users must obtain the source datasets from the original dataset custodians and comply with their access terms.
+
 ## Raw data availability
 
 The raw CheXpert chest radiograph images are third-party medical imaging data and are not redistributed in this repository. CheXpert can be requested from the official Stanford ML Group site:

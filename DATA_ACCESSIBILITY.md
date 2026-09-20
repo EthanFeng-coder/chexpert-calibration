@@ -12,6 +12,15 @@ For reproducibility, permitted derived outputs, aggregate performance results, c
 
 Any external-domain datasets used in the study should be obtained from their original providers subject to their respective access terms. Raw third-party medical images, identifiable patient data, credentials, API keys, tokens, and private local paths should not be committed to this repository.
 
+
+## Checkpoint availability
+
+The trained checkpoint files used to generate prediction probabilities for the calibration analyses are available on Hugging Face:
+
+<https://huggingface.co/daemon1st/chexpert-calibration-checkpoints>
+
+The Hugging Face repository includes a checkpoint manifest with file sizes and SHA256 checksums. The checkpoints are model artifacts only; raw medical images are not redistributed.
+
 ## Intended contents
 
 - Code for post-hoc calibration and evaluation.
