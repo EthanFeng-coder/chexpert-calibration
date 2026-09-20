@@ -9,7 +9,7 @@ Journal: *Journal of the Royal Society Interface*
 
 ## Purpose
 
-The journal requested that data and code be made freely available at submission. This repository is intended to hold the code, configuration files, split definitions, derived outputs, and source data needed to verify and reproduce the manuscript's tables and figures.
+The journal requested that data and code be made freely available at submission. This repository is intended to hold the code, configuration files, derived outputs and documentation needed to verify and reproduce the manuscript's tables and figures.
 
 ## What should be included
 
@@ -24,12 +24,7 @@ environment.yml or requirements.txt
 configs/
 scripts/
 src/
-splits/
-predictions/
 results/
-tables/
-figures/source_data/
-logs/
 ```
 
 ## Raw data availability

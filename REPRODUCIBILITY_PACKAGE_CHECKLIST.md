@@ -22,14 +22,10 @@ Use this before resubmitting `rsif-2026-1060`.
 
 ## Data and derived outputs
 
-- [ ] Patient-disjoint split definitions are included.
-- [ ] Prediction CSVs are included where permitted.
-- [ ] Calibration outputs are included.
-- [ ] Aggregate result CSVs are included.
-- [ ] Bootstrap CI outputs are included.
-- [ ] Table source data are included.
-- [ ] Figure source data are included.
-- [ ] Logs/configs/seeds are included.
+- [ ] Calibration outputs are included if permitted before publication.
+- [ ] Aggregate result CSVs are included if permitted before publication.
+- [ ] Bootstrap CI outputs are included if permitted before publication.
+- [ ] Configs/seeds are documented.
 
 ## Restricted raw datasets
 
