@@ -17,6 +17,7 @@ REPRODUCIBILITY_PACKAGE_CHECKLIST.md
 LICENSE
 environment.yml
 requirements.txt
+SYSTEM_ENVIRONMENT.md
 configs/
 scripts/
 src/
@@ -24,6 +25,8 @@ results/
 ```
 
 ## Environment
+
+The minimal analysis environment is pinned in `environment.yml` and `requirements.txt`. See `SYSTEM_ENVIRONMENT.md` for the original Ubuntu, GPU, driver, and CUDA details.
 
 Create the conda environment:
 
@@ -54,7 +57,7 @@ A reviewer or reader with authorised access to the source datasets should be abl
 
 1. Install the environment.
 2. Place datasets or derived permitted inputs in the expected folder layout.
-3. Run the evaluation and calibration scripts once added.
+3. Run the included data-preparation and calibration/statistical-analysis scripts.
 4. Regenerate reported tables and figures from authorised data and permitted derived outputs.
 5. Check random seeds, configuration files, and bootstrap confidence interval settings.
 
@@ -65,7 +68,7 @@ Update this section after adding the real scripts.
 ```bash
 conda env create -f environment.yml
 conda activate chexpert-calibration
-python scripts/run_calibration.py --config configs/main.yaml
+python scripts/scripts_calibration_paper_analysis.py --help
 ```
 
 ## Citation
