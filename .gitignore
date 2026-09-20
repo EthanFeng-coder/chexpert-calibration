@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+
+# Secrets
+.env
+*.pem
+*.key
+id_rsa*
+
+# Large/raw datasets - do not commit raw medical images
+raw_data/
+data/raw/
+CheXpert-v1.0*/
+*.dcm
+*.nii
+*.nii.gz
+
+# Temporary outputs
+/tmp/
+tmp/
+cache/
