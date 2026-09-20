@@ -15,26 +15,25 @@ scikit-learn 1.6.1
 matplotlib 3.9.4
 ```
 
-Only these direct runtime dependencies are listed in `requirements.txt` and `environment.yml` because the public scripts currently perform data preparation and calibration/statistical analysis. GPU inference/training dependencies are not required for these public analysis scripts.
+Only these direct runtime dependencies are listed in `requirements.txt` and `environment.yml` because the public scripts currently perform data preparation and calibration/statistical analysis. Use conda for the recommended setup. GPU inference/training dependencies are not required for these public analysis scripts.
 
 ## Original Ubuntu/GPU host
 
-The original Linux host used for the GPU-backed work was:
+The original Linux host used for GPU-backed work was:
 
 ```text
 Ubuntu 24.04.4 LTS (Noble Numbat)
 Kernel used in the old root: 6.17.0-14-generic
 NVIDIA driver package: cuda-drivers-580 580.159.04-1ubuntu1
-CUDA toolkit packages installed: 12.8.2 and 13.0.3
-CUDA reported by nvidia-smi during the original check: 13.0
-GPU 0: NVIDIA GeForce RTX 5090, 32 GB VRAM
-GPU 1: NVIDIA GeForce RTX 5090, 32 GB VRAM
+GPU: NVIDIA GeForce RTX 5090, 32 GB VRAM
 ```
 
-The working convention for GPU-isolated runs was to reserve physical GPU 0 for display/interactive use and run ML jobs on physical GPU 1, typically with:
+CUDA toolkit packages were installed system-wide on the original Ubuntu host, but the public analysis scripts should be run through the conda environment described above. The minimal public analysis environment does not require CUDA. If GPU inference code is added later, create a separate optional conda environment for PyTorch/CUDA inference.
+
+For GPU-isolated local inference runs, the working convention was:
 
 ```bash
-CUDA_VISIBLE_DEVICES=1 python <script>.py
+CUDA_VISIBLE_DEVICES=1 conda run -n medical_cnn python <script>.py
 ```
 
 ## Notes

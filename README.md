@@ -26,7 +26,7 @@ results/
 
 ## Environment
 
-The minimal analysis environment is pinned in `environment.yml` and `requirements.txt`. See `SYSTEM_ENVIRONMENT.md` for the original Ubuntu, GPU, driver, and CUDA details.
+The recommended setup uses conda. The minimal analysis environment is pinned in `environment.yml` and mirrored in `requirements.txt`. See `SYSTEM_ENVIRONMENT.md` for the original Ubuntu, RTX 5090 GPU, and driver details.
 
 Create the conda environment:
 
