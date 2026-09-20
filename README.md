@@ -18,9 +18,6 @@ LICENSE
 environment.yml
 requirements.txt
 SYSTEM_ENVIRONMENT.md
-TRAINING.md
-environment-gpu.yml
-requirements-gpu.txt
 configs/
 scripts/
 src/
@@ -29,7 +26,7 @@ results/
 
 ## Environment
 
-The recommended setup uses conda. The minimal analysis environment is pinned in `environment.yml` and mirrored in `requirements.txt`. Training/checkpoint provenance is documented in `TRAINING.md`; optional GPU dependencies are separated into `environment-gpu.yml` and `requirements-gpu.txt`. See `SYSTEM_ENVIRONMENT.md` for the original Ubuntu, RTX 5090 GPU, and driver details.
+The recommended setup uses conda. The minimal analysis environment is pinned in `environment.yml` and mirrored in `requirements.txt`. See `SYSTEM_ENVIRONMENT.md` for the original Ubuntu, RTX 5090 GPU, and driver details.
 
 Create the conda environment:
 
