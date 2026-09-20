@@ -80,6 +80,3 @@ conda activate chexpert-calibration
 python scripts/scripts_calibration_paper_analysis.py --help
 ```
 
-## Citation
-
-If this repository is archived on Zenodo, OSF, or Figshare, add the DOI here.
