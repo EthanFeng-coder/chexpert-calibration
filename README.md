@@ -70,13 +70,3 @@ A reviewer or reader with authorised access to the source datasets should be abl
 4. Regenerate reported tables and figures from authorised data and permitted derived outputs.
 5. Check random seeds, configuration files, and bootstrap confidence interval settings.
 
-## Commands placeholder
-
-Update this section after adding the real scripts.
-
-```bash
-conda env create -f environment.yml
-conda activate chexpert-calibration
-python scripts/scripts_calibration_paper_analysis.py --help
-```
-
